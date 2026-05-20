@@ -224,8 +224,7 @@ python scripts/visualise.py --benchmark results/benchmark.csv
 bash scripts/benchmark.sh
 ```
 
-This runs Serial/OpenMP, MPI, and CUDA backends at 10k / 100k / 500k paths
-and appends timing to `results/benchmark.csv`.
+This runs Serial/OpenMP, MPI, and CUDA backends at 10k / 100k / 500k paths.
 
 ---
 
@@ -235,8 +234,6 @@ and appends timing to `results/benchmark.csv`.
 btc_monte_carlo/
 ├── CMakeLists.txt          # Build system
 ├── README.md
-├── data/
-│   └── btc_prices.csv      # Sample historical prices
 ├── include/
 │   ├── types.hpp           # SimConfig, SimStats, PathMatrix
 │   ├── data_loader.hpp
@@ -255,24 +252,3 @@ btc_monte_carlo/
 │   ├── statistics.cpp
 │   ├── results_writer.cpp
 │   └── logger.cpp
-├── results/                # Generated output (gitignored)
-└── scripts/
-    ├── build.sh
-    ├── benchmark.sh
-    └── visualise.py
-```
-
----
-
-## Contributing
-
-1. Fork the repo
-2. Create a feature branch: `git checkout -b feature/my-change`
-3. Run the full build and a quick sanity test
-4. Submit a pull request
-
----
-
-## License
-
-MIT
